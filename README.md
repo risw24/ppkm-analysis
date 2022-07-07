@@ -27,8 +27,20 @@ The prediction is using user real name. If the account doesn't contain real name
 ## Step 3 - Stance Prediction
 Before prediction started, tweet text is processed in preprocessing step. Preprocessing step is done by normalize text with remove stopwrods, remove emoji etc. After text is clear enough, text is converted to matrices with TF-IDF. The matrices is used to predict stance with machine learning algorithm.
 
-## Step 4 - 
-
-## Step 5
+## Step 4 - Building Edge and Node for Social Network Graph
+Node graph is contain information about username, gender and stance user. Stance user is obtained from voting user tweet stance, which is tend to pro or cons about PPKM. If total pro and cons is same, user data is deleted.<br/>
+Edge graph is contain information about to who the tweet is replied. It can show username twitter that has more replied.
 
 ## Analysis
+The social network analysis is helped by using Gephi.
+### Pro and cons gender proportion about PPKM
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/gender_ppkm.png?raw=true)
+From that pie chart, we can see woman dominate man. If we see the stance in woman and man, woman still dominating man in pro stance and cons stance. It is conducted that we can't say woman is pro or cons about PPKM because woman always domanating in all stance.
+
+### Three main username that cons about PPKM
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/cons_ppkm.png?raw=true)
+To detect main username that cons about PPKM, I used PageRank Centrality to detect it. PageRank Centrality will count the in-degree node. It can show us thw main source information about cons and can affected other cons user to reply that tweet.
+
+### Pro PPKM community
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/pro_ppkm_community.png?raw=true)
+This is Pro PPKM Community that I detected with modularity. There is around 8 community that formed.
