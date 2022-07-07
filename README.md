@@ -34,13 +34,13 @@ Edge graph is contain information about to who the tweet is replied. It can show
 ## Analysis
 The social network analysis is helped by using Gephi.
 ### Pro and cons gender proportion about PPKM
-![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/gender_ppkm.png?raw=true)
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/gender_ppkm.png?raw=true)<br/>
 From that pie chart, we can see woman dominate man. If we see the stance in woman and man, woman still dominating man in pro stance and cons stance. It is conducted that we can't say woman is pro or cons about PPKM because woman always domanating in all stance.
 
 ### Three main username that cons about PPKM
-![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/cons_ppkm.png?raw=true)
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/cons_ppkm.PNG?raw=true)<br/>
 To detect main username that cons about PPKM, I used PageRank Centrality to detect it. PageRank Centrality will count the in-degree node. It can show us thw main source information about cons and can affected other cons user to reply that tweet.
 
 ### Pro PPKM community
-![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/pro_ppkm_community.png?raw=true)
+![alt text](https://github.com/risw24/ppkm-analysis/blob/master/image/pro_ppkm_community.PNG?raw=true)<br/>
 This is Pro PPKM Community that I detected with modularity. There is around 8 community that formed.
